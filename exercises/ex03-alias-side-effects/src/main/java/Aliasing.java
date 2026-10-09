@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Exercise (Chapter 1: Introduction to Java) — aliasing, references vs.
@@ -39,7 +41,10 @@ public class Aliasing {
      * @param amount the value to add to each element
      */
     public static void addInPlace(int[] arr, int amount) {
-        // TODO: complete
+        for (int i = 0; i < arr.length; i++){
+            arr[i] += amount;
+        }
+
     }
 
     /**
@@ -51,7 +56,10 @@ public class Aliasing {
      * @return a new array of the same length, each element increased by amount
      */
     public static int[] addCopy(int[] arr, int amount) {
-        // TODO: complete
-        return new int[1];
+        int[] numbers = new int[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            numbers[i] = arr[i] + amount;
+        }
+        return numbers;
     }
 }
