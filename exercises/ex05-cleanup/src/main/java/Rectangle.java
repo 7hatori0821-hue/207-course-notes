@@ -2,18 +2,18 @@ public class Rectangle {
     private double width;
     private double height;
 
-    public Rectangle(double w,double h){
-        this.width=w;
-        this.height=h;
+    public Rectangle(double w, double h){
+        this.width = w;
+        this.height = h;
     }
 
     public double area(){
-        return width*height;
+        return width * height;
     }
 
     /**
      * scales the rectangle
-     * @param factor
+     * @param factor the scaling factor
      */
     public void scale(double factor) {
       width *= factor;
