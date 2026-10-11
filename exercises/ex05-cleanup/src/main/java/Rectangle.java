@@ -12,7 +12,7 @@ public class Rectangle {
      * @param w the width of the rectangle
      * @param h the height of the rectangle
      */
-    public Rectangle(double w, double h){
+    public Rectangle(double w, double h) {
         this.width = w;
         this.height = h;
     }
@@ -22,17 +22,18 @@ public class Rectangle {
      *
      * @return the area of the rectangle
      */
-    public double area(){
+    public double area() {
         return width * height;
     }
 
     /**
      * scales the rectangle
+     *
      * @param factor the scaling factor
      */
     public void scale(double factor) {
-      width *= factor;
-      height *= factor;
+        width *= factor;
+        height *= factor;
     }
 
     /**
@@ -41,7 +42,7 @@ public class Rectangle {
      * @param other the rectangle to compare with
      * @return true if this rectangle has a larger area
      */
-    public boolean isLargerThan(Rectangle other){
-            return (area() > other.area());
+    public boolean isLargerThan(Rectangle other) {
+        return (area() > other.area());
     }
 }
